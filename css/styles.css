@@ -673,10 +673,14 @@ textarea {
   border-radius: 4px;
 }
 .policy {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
-.policy label {
-  margin-left: 8.48px;
+.lable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
@@ -685,10 +689,6 @@ textarea {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-}
-.leble {
-  display: flex;
-  align-items: center;
 }
 .checkbox {
   position: absolute;
@@ -701,12 +701,15 @@ textarea {
   overflow: hidden;
 }
 .checkbox-icon {
-  display: inline-block;
+  display: block;
+  margin-right: 8.48px;
   width: 15px;
   height: 15px;
   border: 2px solid #000000;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + .checkbox-icon {
   background-color: var(--accent-color);
@@ -714,6 +717,9 @@ textarea {
   background-image: url(../images/check.svg);
   background-size: contain;
   background-origin: border-box;
+}
+.agreement {
+  margin-right: 4px;
 }
 .agreement-conditions {
   text-decoration-line: underline;
