@@ -571,6 +571,7 @@ body {
 
 .backdrop {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -642,7 +643,10 @@ body {
 }
 .form-input {
   margin: 0;
-  padding: 11px 16px;
+  padding-top: 11px;
+  padding-right: 16px;
+  padding-left: 42px;
+  padding-bottom: 11px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
